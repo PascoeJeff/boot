@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 //@JsonIgnoreProperties(value = {"field1"}) static filtering
-@JsonFilter(value = "SomeBeanFilter")
+@JsonFilter(value = "SomeBeanFilter") // used in dynamic filtering
 public class SomeBean {
 	private String field1;
 	private String field2;
