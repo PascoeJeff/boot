@@ -38,3 +38,5 @@ Links of interests
   <artifactId>springfox-swagger-ui</artifactId>
   <version>2.8.0</version>
 </dependency>
+* [H2 Console](http://localhost:8080/h2-console)
+  * Ensure 'spring.h2.console.enabled=true' is set in application.properties
