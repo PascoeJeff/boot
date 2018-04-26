@@ -44,8 +44,8 @@ Links of interests
   * Default jdbc url is 'jdbc:h2:mem:testdb'
 ```
 <dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
+  <groupId>com.h2database</groupId>
+  <artifactId>h2</artifactId>
+  <scope>runtime</scope>
 </dependency>
 ```
