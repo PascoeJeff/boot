@@ -12,16 +12,29 @@ Links of interests
 * [Hal Browser](http://localhost:8080)
 ```
 <dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-rest-hal-browser</artifactId>
-			<version>3.0.6.RELEASE</version>
+  <groupId>org.springframework.data</groupId>
+  <artifactId>spring-data-rest-hal-browser</artifactId>
+  <version>3.0.6.RELEASE</version>
 </dependency>
 ```
 * [Actuator](http://localhost:8080/actuator)
 ```
 <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		<version>2.0.0.RELEASE</version>
-		</dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-actuator</artifactId>
+  <version>2.0.0.RELEASE</version>
+</dependency>
  ```
+* [Swagger](http://localhost:8080/v2/api-docs)
+* [Swagger UI](http://localhost:8080/swagger-ui.html)
+```
+<dependency>
+  <groupId>io.springfox</groupId>
+  <artifactId>springfox-swagger2</artifactId>
+  <version>2.8.0</version>
+</dependency>
+<dependency>
+  <groupId>io.springfox</groupId>
+  <artifactId>springfox-swagger-ui</artifactId>
+  <version>2.8.0</version>
+</dependency>
