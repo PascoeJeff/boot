@@ -41,3 +41,11 @@ Links of interests
 ```
 * [H2 Console](http://localhost:8080/h2-console)
   * Ensure 'spring.h2.console.enabled=true' is set in application.properties
+  * Default jdbc url is 'jdbc:h2:mem:testdb'
+```
+<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+</dependency>
+```
