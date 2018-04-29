@@ -15,17 +15,17 @@ public class UserDaoService {
 		users.add(new User(2, "Eve", new Date()));
 		users.add(new User(3, "Jack", new Date()));
 
-		posts.add(new Post(1, "Adam Post 1"));
-		posts.add(new Post(2, "Adam Post 2"));
-		posts.add(new Post(3, "Adam Post 3"));
+		posts.add(new Post(users.get(0),1, "Adam Post 1"));
+		posts.add(new Post(users.get(0),2, "Adam Post 2"));
+		posts.add(new Post(users.get(0),3, "Adam Post 3"));
 
-		posts.add(new Post(1, "Eve Post 1"));
-		posts.add(new Post(2, "Eve Post 2"));
-		posts.add(new Post(3, "Eve Post 3"));
+		posts.add(new Post(users.get(1),4, "Eve Post 1"));
+		posts.add(new Post(users.get(1),5, "Eve Post 2"));
+		posts.add(new Post(users.get(1),6, "Eve Post 3"));
 
-		posts.add(new Post(1, "Jack Post 1"));
-		posts.add(new Post(2, "Jack Post 2"));
-		posts.add(new Post(3, "Jack Post 3"));
+		posts.add(new Post(users.get(2),7, "Jack Post 1"));
+		posts.add(new Post(users.get(2),8, "Jack Post 2"));
+		posts.add(new Post(users.get(2),9, "Jack Post 3"));
 	}
 
 	private static int userCount = 3;

@@ -1,12 +1,23 @@
 package com.in28minutes.rest.webservices.restfulwebservices.user;
 
-public class Post {
-	private Integer id;
-	private String message;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
-	public Post(Integer id, String message) {
+import javax.persistence.*;
+
+@Entity
+public class Post {
+	@Id
+	@GeneratedValue
+	private Integer id;
+	private String description;
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	private User user;
+
+	public Post(User user, Integer id, String description) {
+		this.user = user;
 		this.id = id;
-		this.message = message;
+		this.description = description;
 	}
 
 	public Post() {
@@ -20,11 +31,27 @@ public class Post {
 		this.id = id;
 	}
 
-	public String getMessage() {
-		return message;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setMessage(String message) {
-		this.message = message;
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	@Override
+	public String toString() {
+		return "Post{" +
+				"id=" + id +
+				", description='" + description + '\'' +
+				'}';
 	}
 }
