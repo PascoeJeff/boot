@@ -7,6 +7,23 @@
 * Dynamic and static filtering on fields in json
   * [Controller](https://github.com/idaho-guy/boot/blob/master/restful-web-services/src/main/java/com/in28minutes/rest/webservices/restfulwebservices/filtering/FilteringController.java#L18)
   * [Bean](https://github.com/idaho-guy/boot/blob/master/restful-web-services/src/main/java/com/in28minutes/rest/webservices/restfulwebservices/filtering/SomeBean.java#L7)
+* Spring cloud config server
+  * [@EnableConfigServer](https://github.com/idaho-guy/boot/blob/master/spring-cloud-config-server/src/main/java/com/in28minutes/microservices/springcloudconfigserver/SpringCloudConfigServerApplication.java#L8)
+  * [Configure url to git repo:spring.cloud.config.server.git.uri](https://github.com/idaho-guy/boot/blob/master/spring-cloud-config-server/src/main/resources/application.properties#L4)
+  * Naming convention in repo [app name].[environment].[properties]; for app limits-service,property file names would be
+    * limits-service-dev.properties
+    * limits-service-stage.properties
+    * limits-service-prod.properties
+    * limits-service.properties (default)
+  * Above properties would be accessed with:
+    * http://localhost:8888/limits-service/dev
+    * http://localhost:8888/limits-service/stage
+    * http://localhost:8888/limits-service/prod
+    * http://localhost:8888/limits-service/default
+* Spring cloud client
+  * Need to rename 'application.properties' to bootstrap.properties
+  * The name used for the 'spring.application.name' will be used for the [app name] described above
+    
 
 Links of interests
 * [Hal Browser](http://localhost:8080)
