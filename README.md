@@ -89,3 +89,9 @@ Eureka
 * [@EnableEurekaServer](https://github.com/idaho-guy/boot/blob/master/netflix-eureka-naming-server/src/main/java/com/in28minutes/microservices/netflixeurekanamingserver/NetflixEurekaNamingServerApplication.java#L8)
 * Configuration in [application.properties](https://github.com/idaho-guy/boot/blob/master/netflix-eureka-naming-server/src/main/resources/application.properties#L3)
 * [Console](http://localhost:8761/)
+```
+<dependency>
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+</dependency>
+```
