@@ -85,7 +85,7 @@ Ribbon load balancing
   <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
 </dependency>
 ```
-Eureka
+Eureka Server
 * [@EnableEurekaServer](https://github.com/idaho-guy/boot/blob/master/netflix-eureka-naming-server/src/main/java/com/in28minutes/microservices/netflixeurekanamingserver/NetflixEurekaNamingServerApplication.java#L8)
 * Configuration in [application.properties](https://github.com/idaho-guy/boot/blob/master/netflix-eureka-naming-server/src/main/resources/application.properties#L3)
 * [Console](http://localhost:8761/)
@@ -93,5 +93,14 @@ Eureka
 <dependency>
   <groupId>org.springframework.cloud</groupId>
   <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+</dependency>
+```
+Eureka Client
+* [@EnableEurekaClient](https://github.com/idaho-guy/boot/blob/master/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java#L10)
+* application.properties entry: eureka.client.service-url.default-zone=http://localhost:8761/eureka
+```
+<dependency>
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 </dependency>
 ```
