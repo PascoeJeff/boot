@@ -3,11 +3,13 @@ package com.in28minutes.microservices.currencyconversionservice;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @SpringBootApplication
-@EnableFeignClients("com.in28minutes.microservices.currencyconversionservice")
+@EnableFeignClients
+@ComponentScan("com.in28minutes.microservices")
 public class CurrencyConversionServiceApplication {
 
 	public static void main(String[] args) {
