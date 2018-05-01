@@ -76,3 +76,6 @@ Links of interests
 </dependency>
 
 ```
+Ribbon load balancing
+* [@RibbonClient](https://github.com/idaho-guy/boot/blob/master/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/CurrencyExchangeProxy.java#L11)
+* Set [currency-exchange-service.ribbon.listOfServers](https://github.com/idaho-guy/boot/blob/master/currency-conversion-service/src/main/resources/application.properties#L3) property in application.properties
