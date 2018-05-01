@@ -66,3 +66,13 @@ Links of interests
   <scope>runtime</scope>
 </dependency>
 ```
+* Feign Client
+  * [@FeignClient](https://github.com/idaho-guy/boot/blob/master/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/CurrencyExchangeProxy.java#L8)
+  * [@EnableFeignClients](https://github.com/idaho-guy/boot/blob/master/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java#L11)
+```
+<dependency>
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-starter-openfeign</artifactId>
+</dependency>
+
+```
