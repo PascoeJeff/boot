@@ -68,7 +68,7 @@ Links of interests
 ```
 * Feign Client
   * [@FeignClient](https://github.com/idaho-guy/boot/blob/master/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/CurrencyExchangeProxy.java#L8)
-  * [@EnableFeignClient](https://github.com/idaho-guy/boot/blob/master/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java#L11)
+  * [@EnableFeignClients](https://github.com/idaho-guy/boot/blob/master/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java#L11)
 ```
 <dependency>
   <groupId>org.springframework.cloud</groupId>
