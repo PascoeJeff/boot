@@ -79,13 +79,14 @@ Links of interests
 Ribbon load balancing
 * [@RibbonClient](https://github.com/idaho-guy/boot/blob/master/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/CurrencyExchangeProxy.java#L11)
 * Set [currency-exchange-service.ribbon.listOfServers](https://github.com/idaho-guy/boot/blob/master/currency-conversion-service/src/main/resources/application.properties#L3) property in application.properties
+* Cleaner to use Eureka and then listOfServers will not need to be specified; Ribbon will use the name to look up registered servers in Eureka
 ```
 <dependency>
   <groupId>org.springframework.cloud</groupId>
   <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
 </dependency>
 ```
-Eureka
+Eureka Server
 * [@EnableEurekaServer](https://github.com/idaho-guy/boot/blob/master/netflix-eureka-naming-server/src/main/java/com/in28minutes/microservices/netflixeurekanamingserver/NetflixEurekaNamingServerApplication.java#L8)
 * Configuration in [application.properties](https://github.com/idaho-guy/boot/blob/master/netflix-eureka-naming-server/src/main/resources/application.properties#L3)
 * [Console](http://localhost:8761/)
@@ -93,5 +94,14 @@ Eureka
 <dependency>
   <groupId>org.springframework.cloud</groupId>
   <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+</dependency>
+```
+Eureka Client
+* [@EnableEurekaClient](https://github.com/idaho-guy/boot/blob/master/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java#L10)
+* application.properties entry: eureka.client.service-url.default-zone=http://localhost:8761/eureka
+```
+<dependency>
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 </dependency>
 ```
