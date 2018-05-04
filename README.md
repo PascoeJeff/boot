@@ -105,7 +105,13 @@ Eureka Client
   <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 </dependency>
 ```
-Zuul
+Zuul API Gateway
+* API Gateways
+  * Authentication, authorization, and security
+  * Rate limits
+  * Fault tolerance
+  * Service aggregation
+* Access microservices through api gateway instead of directly
 * [@EnableZuulProxy and @EnableDiscoveryClient](https://github.com/idaho-guy/boot/blob/master/netflix-zuul-api-gateway-server/src/main/java/com/in28minutes/microservices/netflixzuulapigatewayserver/NetflixZuulApiGatewayServerApplication.java#L8)
 * Other applications registered with Eureka can be access through zuul port (8765)
 * Format is http://localhost:8765/{service name}/{uri}
