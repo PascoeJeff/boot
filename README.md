@@ -121,3 +121,11 @@ Zuul API Gateway
   <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 </dependency>
 ```
+Sleuth (distributed tracing)
+```
+<dependency>
+  	<groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-starter-sleuth</artifactId>
+</dependency>
+```
+
