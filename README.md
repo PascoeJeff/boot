@@ -128,4 +128,6 @@ Sleuth (distributed tracing)
   <artifactId>spring-cloud-starter-sleuth</artifactId>
 </dependency>
 ```
+Rabbit MQ 
+* Start server: /usr/local/Cellar/rabbitmq/3.7.4/sbin/rabbitmq-server
 
