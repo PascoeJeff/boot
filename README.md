@@ -137,5 +137,6 @@ Zipkin(https://zipkin.io/pages/quickstart)
 ```
 curl -sSL https://zipkin.io/quickstart.sh | bash -s
 java -jar zipkin.jar
+with rabbitmq setup: RABBIT_URI=amqp://localhost java -jar zipkin.jar 
 ```
 
