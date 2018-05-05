@@ -130,6 +130,7 @@ Sleuth (distributed tracing)
 ```
 Rabbit MQ 
 * Start server: /usr/local/Cellar/rabbitmq/3.7.4/sbin/rabbitmq-server
+* [Console](http://localhost:15672/) - guest/guest
 
 Zipkin(https://zipkin.io/pages/quickstart)
 * [Dashboard](http://localhost:9411/zipkin/)
