@@ -131,3 +131,9 @@ Sleuth (distributed tracing)
 Rabbit MQ 
 * Start server: /usr/local/Cellar/rabbitmq/3.7.4/sbin/rabbitmq-server
 
+Zipkin(https://zipkin.io/pages/quickstart)
+```
+curl -sSL https://zipkin.io/quickstart.sh | bash -s
+java -jar zipkin.jar
+```
+
