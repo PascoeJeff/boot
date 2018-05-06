@@ -23,6 +23,25 @@
 * Spring cloud client
   * Need to rename 'application.properties' to bootstrap.properties
   * The name used for the 'spring.application.name' will be used for the [app name] described above
+  * Can refresh properties on update to git repo
+    * Include actuator in client project
+    * POST to http://localhost:[applicable port]/actuator/refresh endpoint 
+    * Ensure config is set up for actuator endpoint access
+    ```
+    management.endpoints.web.exposure.include=*
+    ```
+* Spring cloud bus
+  * by adding the following dependency to the spring-cloud-config-server project AND the clients
+  ```
+  <dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+		</dependency>
+  ```
+  * The instances are registered with the bus and refreshing the bus after a repo update will update all instances
+  ```
+  POST to http://localhost:[applicable port]/actuator/bus-refresh
+  ```
     
 
 Links of interests
