@@ -159,3 +159,14 @@ java -jar zipkin.jar
 with rabbitmq setup: RABBIT_URI=amqp://localhost java -jar zipkin.jar 
 ```
 
+Hystrix
+* [@EnableHystrix](https://github.com/idaho-guy/boot/blob/master/limits-service/src/main/java/com/in28minutes/microservices/limitsservice/LimitsServiceApplication.java#L8)
+* [@HystrixCommand with fallback](https://github.com/idaho-guy/boot/blob/master/limits-service/src/main/java/com/in28minutes/microservices/limitsservice/LimitsConfigurationController.java#L26)
+```
+<dependency>
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-starter-hystrix</artifactId>
+  <version>1.4.4.RELEASE</version>
+</dependency>
+```
+
