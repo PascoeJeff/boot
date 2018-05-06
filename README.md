@@ -23,6 +23,9 @@
 * Spring cloud client
   * Need to rename 'application.properties' to bootstrap.properties
   * The name used for the 'spring.application.name' will be used for the [app name] described above
+  * Can refresh properties on update to git repo
+    * Include actuator in client project
+    * POST to http://localhost:[applicable port]/actuator/refresh endpoint 
     
 
 Links of interests
