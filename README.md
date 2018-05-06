@@ -26,6 +26,10 @@
   * Can refresh properties on update to git repo
     * Include actuator in client project
     * POST to http://localhost:[applicable port]/actuator/refresh endpoint 
+    * Ensure config is set up for actuator endpoint access
+    ```
+    management.endpoints.web.exposure.include=*
+    ```
     
 
 Links of interests
