@@ -170,3 +170,18 @@ Hystrix
 </dependency>
 ```
 
+Spring boot
+Goals
+Enable building production ready applications quickly
+Provide common non-functional features
+* embedded servers
+* metrics
+* health checks
+* externalized configuration
+
+Features
+Quick starter projects with auto configuration
+* Web
+* JPA
+
+
