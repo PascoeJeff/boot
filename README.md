@@ -34,9 +34,9 @@
   * by adding the following dependency to the spring-cloud-config-server project AND the clients
   ```
   <dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
-		</dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+  </dependency>
   ```
   * The instances are registered with the bus and refreshing the bus after a repo update will update all instances
   ```
