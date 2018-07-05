@@ -162,6 +162,8 @@ with rabbitmq setup: RABBIT_URI=amqp://localhost java -jar zipkin.jar
 Hystrix
 * [@EnableHystrix](https://github.com/idaho-guy/boot/blob/master/limits-service/src/main/java/com/in28minutes/microservices/limitsservice/LimitsServiceApplication.java#L8)
 * [@HystrixCommand with fallback](https://github.com/idaho-guy/boot/blob/master/limits-service/src/main/java/com/in28minutes/microservices/limitsservice/LimitsConfigurationController.java#L26)
+* [hystrix.stream](http://localhost:8080/hystrix.stream)
+* [Dashboard](http://localhost:8686/hystrix)
 ```
 <dependency>
   <groupId>org.springframework.cloud</groupId>
