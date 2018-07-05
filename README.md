@@ -164,6 +164,7 @@ Hystrix
 * [@HystrixCommand with fallback](https://github.com/idaho-guy/boot/blob/master/limits-service/src/main/java/com/in28minutes/microservices/limitsservice/LimitsConfigurationController.java#L26)
 * [hystrix.stream](http://localhost:8080/hystrix.stream)
 * [Dashboard](http://localhost:8686/hystrix)
+* [Sample Turbine url for dashboard](http://localhost:8585/turbine.stream?cluster=GREETING-HYSTRIX)
 ```
 <dependency>
   <groupId>org.springframework.cloud</groupId>
